@@ -25,7 +25,10 @@ export const register = async (req: Request, res: Response) => {
 
     await user.save();
 
+    const token = generateToken(user._id)
+
     res.status(201).json({
+        token,
         user: {
             id: user._id,
             username: user.username,
