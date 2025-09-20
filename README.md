@@ -43,7 +43,7 @@ A comprehensive weather dashboard application built with the MERN stack (MongoDB
 
 ### 1. Clone the Repository
 ```bash
-git clone <repository-url>
+git clone https://github.com/hadhihassan/weather-dashboard.git
 cd weather-dashboard
 ```
 
@@ -228,8 +228,8 @@ Get user profile (requires authentication).
   "username" : "user",
   "email":"user@gmail.com",
   "favoriteCities" : []
-  "createdAt": Date;
-  "updatedAt": Date;
+  "createdAt": "Date"
+  "updatedAt": "Date"
 }
 ```
 
@@ -249,7 +249,7 @@ Remove city from favorites (requires authentication).
 **Request Body:**
 ```json
 {
-   "message": 'City removed',
+   "message": "City removed",
    "favoriteCities": []
 }
 ```
@@ -313,7 +313,6 @@ Get favorite cities (requires authentication).
 3. **Advanced Forecasting**: Add hourly forecasts and more detailed data
 4. **Real Time weather updates** : add real time connection for real time weather updates
 5. **Interactive Maps**: Visual weather data representation
-6. **Multiple Units Support**: Switch between Celsius/Fahrenheit
-7. **Theme Support**: Light/dark mode toggle
-8. **Image Caching**: Cache weather icons locally
+6. **Theme Support**: Light/dark mode toggle
+7. **Image Caching**: Cache weather icons locally
 
