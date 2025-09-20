@@ -3,14 +3,14 @@ name: App CI
 on:
   push:
     branches:
-      - main:
+      - main
 
 jobs:
   server:
     name: Build server
     runs-on: ubuntu-latest
 
-    stratagy:
+    strategy:
       matrix:
         node-versin: [18.x, 20.x]
 
@@ -36,7 +36,7 @@ jobs:
     name: Build frontend
     runs-on: ubuntu-latest
 
-    stratagy:
+    strategy:
       matrix:
         node-versin: [18.x, 20.x]
 
